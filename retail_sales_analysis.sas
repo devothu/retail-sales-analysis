@@ -4,14 +4,16 @@
 *.scss.map
 /*==============================================
 Retail Sales Analysis Project
-Author: Your Name
+Author:Othusitse Matlhaku
 Description: Basic retail sales analytics using SAS
 ==============================================*/
 
-/* Step 1: Define library */
-libname retail "/folders/myfolders/retail_project";
+/* Step 1: Define library
+*/
+libname retail "Downloads/retail_project";
 
-/* Step 2: Import CSV file */
+/* Step 2: Import CSV file
+*/
 
 proc import datafile="/folders/myfolders/retail_project/data/sales_data.csv"
     out=retail.sales
