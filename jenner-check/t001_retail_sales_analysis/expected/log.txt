@@ -1,0 +1,52 @@
+
+NOTE: Option OBS changed to 100.
+NOTE: Library RETAIL uses 1 concatenated paths.
+NOTE: DATA retail.sales
+
+NOTE: Processing inline DATALINES (15 lines)
+
+NOTE: Read 15 rows from DATALINES.
+NOTE: Wrote retail.sales (15 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA retail.sales_clean
+
+
+NOTE: Read 15 rows from retail.sales.
+NOTE: Wrote retail.sales_clean (15 rows, 6 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=retail.sales_clean
+
+NOTE: PROC PRINT completed: 15 observations printed, 6 variables
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+NOTE: PROC SQL 
+
+NOTE: Table retail.sales_by_product created.
+NOTE: PROC SQL statement used.
+NOTE: PROC PRINT data=retail.sales_by_product
+
+NOTE: PROC PRINT completed: 4 observations printed, 3 variables
+NOTE: PROC SQL 
+
+NOTE: Table retail.sales_by_category created.
+NOTE: PROC SQL statement used.
+NOTE: PROC PRINT data=retail.sales_by_category
+
+NOTE: PROC PRINT completed: 4 observations printed, 3 variables
+NOTE: PROC SQL 
+
+NOTE: Table retail.daily_sales created.
+NOTE: PROC SQL statement used.
+NOTE: PROC PRINT data=retail.daily_sales
+
+NOTE: PROC PRINT completed: 8 observations printed, 2 variables
+NOTE: PROC SGPLOT data=retail.sales_by_product
+
+NOTE: PROC SGPLOT output written to: ./ods_output/sgplot.svg
+NOTE: PROC SGPLOT data=retail.daily_sales
+
+NOTE: PROC SGPLOT output written to: ./ods_output/sgplot1.svg

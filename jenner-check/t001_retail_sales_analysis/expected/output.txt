@@ -1,0 +1,54 @@
+
+  Obs   product     category        date  quantity  price  total_sales
+-----  --------  -----------  ----------  --------  -----  -----------
+    1  WidgetA   Hardware     2024-01-05        12    4.5           54
+    2  GadgetB   Electronics  2024-01-05         5  19.99        99.95
+    3  WidgetA   Hardware     2024-01-06         8    4.5           36
+    4  Notebook  Stationery   2024-01-06        20   2.25           45
+    5  GadgetB   Electronics  2024-01-07         3  19.99        59.97
+    6  DeskLamp  Home         2024-01-07         4     15           60
+    7  WidgetA   Hardware     2024-01-08        15    4.5         67.5
+    8  Notebook  Stationery   2024-01-08        10   2.25         22.5
+    9  DeskLamp  Home         2024-01-09         6     15           90
+   10  GadgetB   Electronics  2024-01-09         7  19.99       139.93
+   11  WidgetA   Hardware     2024-01-10         9    4.5         40.5
+   12  Notebook  Stationery   2024-01-10        25   2.25        56.25
+   13  DeskLamp  Home         2024-01-11         2     15           30
+   14  GadgetB   Electronics  2024-01-11         4  19.99        79.96
+   15  WidgetA   Hardware     2024-01-12        11    4.5         49.5
+
+                                                  The MEANS Procedure
+
+ Variable                Sum           Mean         Maximum        Minimum
+ -------------------------------------------------------------------------
+ quantity        141.0000000      9.4000000      25.0000000      2.0000000
+ price           154.2100000     10.2806667      19.9900000      2.2500000
+ total_sales     931.0600000     62.0706667     139.9300000     22.5000000
+ -------------------------------------------------------------------------
+
+
+  Obs   product  total_quantity  total_revenue
+-----  --------  --------------  -------------
+    1  DeskLamp              12            180
+    2  GadgetB               19         379.81
+    3  Notebook              55         123.75
+    4  WidgetA               55          247.5
+
+  Obs     category  total_quantity  total_revenue
+-----  -----------  --------------  -------------
+    1  Electronics              19         379.81
+    2  Hardware                 55          247.5
+    3  Home                     12            180
+    4  Stationery               55         123.75
+
+  Obs        date  daily_revenue
+-----  ----------  -------------
+    1  2024-01-05         153.95
+    2  2024-01-06             81
+    3  2024-01-07         119.97
+    4  2024-01-08             90
+    5  2024-01-09         229.93
+    6  2024-01-10          96.75
+    7  2024-01-11         109.96
+    8  2024-01-12           49.5
+
