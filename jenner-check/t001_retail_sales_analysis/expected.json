@@ -1,0 +1,15 @@
+{
+  "_captured_at": "2026-07-13T09:03:00Z",
+  "_captured_run_id": "r_94c9a0674de64c32ba7b5ff6170cd92c",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote retail.sales_clean (15 rows, 6 columns).",
+    "NOTE: PROC PRINT completed: 15 observations printed, 6 variables",
+    "NOTE: Table retail.sales_by_product created.",
+    "NOTE: Table retail.sales_by_category created.",
+    "NOTE: Table retail.daily_sales created."
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

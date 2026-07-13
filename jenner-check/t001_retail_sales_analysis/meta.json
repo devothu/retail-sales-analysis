@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_retail_sales_analysis",
+  "source_file": "retail_sales_analysis.sas",
+  "source_blob_sha": "784b1b307e83975d1266ca94ba5be94334b020e8",
+  "source_commit": "69dddd519a2cab434f69684d3eae57a351b38db8",
+  "notes": "Retail sales pipeline: builds a sales table, computes total_sales = quantity * price, prints it, runs PROC MEANS (sum/mean/max/min), then three PROC SQL group-by aggregations (by product, category, date) and PROC SGPLOT charts. The original defines a RETAIL libname over a local Downloads folder and PROC IMPORTs an external CSV; here the libname points at WORK and the same five columns (date, product, category, quantity, price) are supplied inline via DATALINES so the run is self-contained. Every DATA-step, PROC MEANS, PROC SQL and PROC SGPLOT step is the author's own, unchanged."
+}
